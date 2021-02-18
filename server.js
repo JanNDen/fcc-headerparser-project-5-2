@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 });
 
 
-// Project Headers
+/********** <JANNDEN> **********/
 app.get("/api/whoami", function (req, res) {
   res.json({
     ipaddress: req.connection["remoteAddress"],
@@ -28,7 +28,7 @@ app.get("/api/whoami", function (req, res) {
     software:req.headers["user-agent"]
   });
 });
-
+/********** </JANNDEN> **********/
 
 
 // listen for requests :)
